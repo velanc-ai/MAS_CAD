@@ -1,0 +1,17 @@
+langchain
+langchain-community>=0.2.0
+langchain-text-splitters>=0.2.0
+sentence-transformers>=3.0.0
+faiss-cpu 
+rank-bm25>=0.2.2
+openai 
+python-dotenv
+langchain 
+wikipedia 
+langchain-community 
+langchain-openai
+langchain-anthropic
+python-dotenv
+pydantic
+duckduckgo-search
+cadquery

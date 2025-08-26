@@ -1,0 +1,90 @@
+{
+  "part_id": "FLG_0002",
+  "design_id": "FDM_001",
+  "intent": "Design a flange suitable for FDM 3D printing with specified dimensions.",
+  "units": "mm",
+  "global_params": {
+    "research_summary": "FDM is suitable for rapid prototyping with materials like PLA. Minimum wall thickness is 0.8 mm, and overhangs above 45\u00b0 need support. PLA is rigid but brittle, with low heat resistance.",
+    "manufacturing_constraints": {
+      "process": "FDM",
+      "min_wall_thickness": "0.8 mm",
+      "min_hole_diameter": "2.0 mm",
+      "overhang_guideline": "Supports needed for angles above 45\u00b0",
+      "tolerance_guideline": "\u00b10.2 mm",
+      "orientation_notes": "Align critical surfaces with the XY plane"
+    },
+    "material_properties": {
+      "material": "PLA",
+      "tensile_strength": "60 MPa",
+      "elongation_at_break": "6%",
+      "heat_deflection_temp": "50 \u00b0C",
+      "density": "1.25 g/cc"
+    },
+    "sources": [
+      "Various articles and guides on FDM materials and DfAM principles.",
+      "Comprehensive guides on PLA properties and usage in 3D printing."
+    ]
+  },
+  "constraints": [
+    "Flange diameter: 283 mm",
+    "Thickness: 10 mm",
+    "Raised face diameter: 89 mm",
+    "Bore diameter: 48 mm",
+    "Raised face height: 155 mm"
+  ],
+  "materials": {
+    "default": "PLA"
+  },
+  "tolerance": "\u00b10.1 mm",
+  "coordinate_system": {
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "axes": [
+      "+X",
+      "+Y",
+      "+Z"
+    ],
+    "plane": "XY"
+  },
+  "steps": [
+    {
+      "id": "step_001",
+      "op_type": "CreateBase",
+      "params": {
+        "diameter": 283,
+        "thickness": 10
+      },
+      "depends_on": []
+    },
+    {
+      "id": "step_002",
+      "op_type": "CreateRaisedFace",
+      "params": {
+        "diameter": 89,
+        "height": 155
+      },
+      "depends_on": [
+        "step_001"
+      ]
+    },
+    {
+      "id": "step_003",
+      "op_type": "CreateBore",
+      "params": {
+        "diameter": 48
+      },
+      "depends_on": [
+        "step_001",
+        "step_002"
+      ]
+    }
+  ],
+  "export": {
+    "format": "STL",
+    "mesh_tolerance": "medium",
+    "units": "mm"
+  }
+}

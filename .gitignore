@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pytest_cache/
+*.egg-info/
+
+# JetBrains IDE settings
+.idea/
+
+
+# Virtual envs
+.venv/
+venv/
+env/
+mas/Lib/
+mas/Scripts/
+mas/pyvenv.cfg
+
+# OS/editor
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
