@@ -15,3 +15,14 @@ python-dotenv
 pydantic
 duckduckgo-search
 cadquery
+pandas
+trimesh
+numpy
+pandas
+openpyxl
+torch
+transformers
+textstat
+tqdm
+sentencepiece
+jsonschema

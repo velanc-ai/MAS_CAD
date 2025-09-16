@@ -34,7 +34,7 @@ class CADSequencePlan(BaseModel):
     part_id: str
     design_id: str
     intent: str
-    Printable_Volume: str
+#    Printable_Volume: str
     units: Literal["mm", "cm", "in"] = "mm"
     global_params: Dict[str, Any] = Field(default_factory=dict)
     constraints: List[str] = Field(default_factory=list)
