@@ -54,4 +54,4 @@ The project includes several Jupyter notebooks (e.g., `FLANGE_JSON_EVALUATION_ME
 ![Benchmark Case Studies](BENCHMARK.jpg)
 
 ## 📜 License
-[Insert License Information]
+This Project is a part of my MSc dissertation 
