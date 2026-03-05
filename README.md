@@ -50,5 +50,8 @@ python main.py
 ## 📊 Evaluation
 The project includes several Jupyter notebooks (e.g., `FLANGE_JSON_EVALUATION_METRIC.ipynb`) to evaluate the accuracy of the agents against benchmark datasets. Metrics are focused on geometric precision and JSON schema adherence.
 
+### Benchmark Case Studies
+![Benchmark Case Studies](BENCHMARK.jpg)
+
 ## 📜 License
 [Insert License Information]
